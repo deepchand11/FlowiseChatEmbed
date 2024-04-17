@@ -51,7 +51,6 @@ export const Badge = (props: Props) => {
       }}
     >
       You are interacting with an AI-powered chatbot
-
     </span>
   );
 };
