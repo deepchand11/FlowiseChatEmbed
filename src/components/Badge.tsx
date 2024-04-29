@@ -50,7 +50,7 @@ export const Badge = (props: Props) => {
         'background-color': props.badgeBackgroundColor ?? '#ffffff',
       }}
     >
-      You are interacting with an AI-powered chatbot
+      Powered by AI.
     </span>
   );
 };

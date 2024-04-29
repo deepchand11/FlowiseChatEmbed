@@ -433,3 +433,42 @@ input {
   padding: 10px 10px;
   font-family: 'Poppins', sans-serif;
 }
+
+.btn-primary {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  will-change: transform;
+  transition: background-color 0.2s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: "museo-sans-rounded", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  box-shadow: inset 0 0 0 2px #fff;
+  border-radius: 50px;
+  background: transparent;
+  color: #172e50;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #8ec479;
+  color: #172e50;
+  box-shadow: none;
+}
+.btn-primary:hover {
+  background-color: #fcbf20;
+  color: #172e50;
+}
+.btn-primary {
+  padding: 6px 16px 6px;
+  font-size: 16px;
+  margin: 15px;
+  margin-left: 0;
+}
