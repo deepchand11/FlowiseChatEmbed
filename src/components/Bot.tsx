@@ -180,7 +180,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
       },
       {
         message:
-          "If I am unable to answer your questions satisfactorily, I can forward your query to a OUP Customer Service representative who will get back to you as soon as possible, during business hours. OUP's Customer Services team is available Mon-Fri, 9-5pm GMT.",
+          "If I am unable to answer your questions satisfactorily, I can forward your query to a OUP Customer Service representative who will get back to you as soon as possible, during business hours. OUP's Customer Services team is available Mon-Fri, 9-5pm UK time.",
         type: 'apiMessage',
       },
     ],
