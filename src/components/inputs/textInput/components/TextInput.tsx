@@ -49,12 +49,12 @@ export const TextInput = (props: Props) => {
       const keyboardEvent = evt as KeyboardEvent;
       // stopPropagation for right arrow key
       if (keyboardEvent.key === 'ArrowRight') {
-        keyboardEvent.stopPropagation()
-        console.log("next")
+        keyboardEvent.stopPropagation();
+        console.log('next');
       }
-      if (keyboardEvent.key === "ArrowLeft") {
-        keyboardEvent.stopPropagation()
-        console.log("prev")
+      if (keyboardEvent.key === 'ArrowLeft') {
+        keyboardEvent.stopPropagation();
+        console.log('prev');
       }
     });
   });
