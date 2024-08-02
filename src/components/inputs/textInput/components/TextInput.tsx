@@ -42,6 +42,10 @@ export const TextInput = (props: Props) => {
 
   onMount(() => {
     if (!isMobile() && inputRef) inputRef.focus();
+    // inputRef keydown event listener event stopPropagation
+    // to prevent the event from bubbling up to the parent
+    // and triggering the submitWhenEnter function
+    inputRef?.addEventListener('keydown', (e) => e.stopPropagation());
   });
 
   return (
