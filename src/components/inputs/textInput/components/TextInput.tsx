@@ -44,8 +44,19 @@ export const TextInput = (props: Props) => {
     if (!isMobile() && inputRef) inputRef.focus();
     // inputRef keydown event listener event stopPropagation
     // to prevent the event from bubbling up to the parent
-    // and triggering the submitWhenEnter function
-    inputRef?.addEventListener('keydown', (e) => e.stopPropagation());
+    // inputRef add event listener for keydown event stopPropagation to prevent the event from bubbling up
+    inputRef?.addEventListener('keydown', (evt: Event) => {
+      const keyboardEvent = evt as KeyboardEvent;
+      // stopPropagation for right arrow key
+      if (keyboardEvent.key === 'ArrowRight') {
+        keyboardEvent.stopPropagation()
+        console.log("next")
+      }
+      if (keyboardEvent.key === "ArrowLeft") {
+        keyboardEvent.stopPropagation()
+        console.log("prev")
+      }
+    });
   });
 
   return (
